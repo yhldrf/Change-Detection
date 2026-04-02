@@ -122,24 +122,15 @@ Overall, this work improves the robustness of 6D pose estimation by enhancing th
 
  \section{Previous work}
  \subsection{Model-Free Object Pose Estimation}
- In recent years, 6D object pose estimation has advanced beyond the reliance on CAD models, leading to the emergence of model-free approaches. 
- Early works such as Gen6D~\cite{liu2022gen6d} and OnePose~\cite{sun2022onepose} and its extension OnePose++~\cite{he2022onepose++} eliminate the need for explicit 3D models by leveraging single-view observations or keypoint-free strategies for pose estimation. 
- However, these methods often rely on multi-view reconstruction to build object-level 3D representations, which limits their accuracy under restricted viewpoints, severe occlusions, or noisy environments.
+ In recent years, 6D object pose estimation has advanced beyond the reliance on CAD models, leading to the emergence of model-free approaches. Early works such as Gen6D~\cite{liu2022gen6d} and OnePose~\cite{sun2022onepose} and its extension OnePose++~\cite{he2022onepose++} eliminate the need for explicit 3D models by leveraging single-view observations or keypoint-free strategies for pose estimation. However, these methods often rely on multi-view reconstruction to build object-level 3D representations, which limits their accuracy under restricted viewpoints, severe occlusions, or noisy environments.
  
- Subsequent approaches aim to improve practicality by reducing reliance on multi-view data. 
- Methods such as SamPose~\cite{shi2025sampose} and AxisPose~\cite{zou2026axispose} propose generalizable single-view frameworks, enabling more efficient inference without complex preprocessing or matching pipelines. 
- Nevertheless, purely vision-based representations remain sensitive to heavy occlusions and cluttered backgrounds, which degrade robustness and generalization.
+ Subsequent approaches aim to improve practicality by reducing reliance on multi-view data.  Methods such as SamPose~\cite{shi2025sampose} and AxisPose~\cite{zou2026axispose} propose generalizable single-view frameworks, enabling more efficient inference without complex preprocessing or matching pipelines.  Nevertheless, purely vision-based representations remain sensitive to adverse light conditions, which degrade their generalization.
  
- Recent efforts further explore model-free generalization under limited supervision. 
- FS6D~\cite{he2022fs6d} and NOPE~\cite focus on few-shot or single-view settings to reduce data collection costs, while LoFTR~\cite{sun2021loftr} leverages transformer-based feature matching to improve robustness in pose estimation. 
- However, these approaches still struggle under severe occlusions. 
- GigaPose~\cite{nguyen2024gigapose} estimates object pose via image-to-3D alignment but requires rendered templates to infer object scale. 
- GFreeDet~\cite{liu2024gfreedet} introduces Gaussian splatting and large-scale visual representations for model-free detection, yet its performance degrades in complex environments. 
- FoundationPose~\citen{wen2024foundationpose} unifies pose estimation and tracking within a single framework, and Any6D~\cite{lee2025any6d} further improves generalization without explicit model dependence.
+ Recent efforts further explore model-free generalization under limited supervision. FS6D~\cite{he2022fs6d} and NOPE~\cite focus on few-shot or single-view settings to reduce data collection costs.  However, these approaches still struggle under severe occlusions. GFreeDet~\cite{liu2024gfreedet} introduces Gaussian splatting and large-scale visual representations for model-free detection, yet its performance degrades in complex environments. FoundationPose~\citen{wen2024foundationpose} unifies pose estimation and tracking within a single framework, and Any6D~\cite{lee2025any6d} further improves generalization without explicit model dependence.
  
  Despite these advances, existing methods remain sensitive to degraded geometric observations. 
- In particular, noisy point clouds and severe occlusions significantly affect geometric consistency, leading to unstable pose estimation. 
- This limitation is especially pronounced in low-light conditions, where sensor noise further deteriorates depth quality.
+ In particular, noisy point clouds and severe occlusions significantly affect geometric consistency, leading to unstable pose estimation. This limitation is especially pronounced in low-light conditions, where sensor noise further deteriorates depth quality.
+ 
  \begin{table}[htbp]
  	\caption{Comparison of 6D object pose detection datasets.}
  	\centering
