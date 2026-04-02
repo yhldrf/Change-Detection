@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  2 APR 2026 07:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  2 APR 2026 10:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,44 +530,44 @@ LaTeX Warning: Citation `f' on page 2 undefined on input line 129.
 <pipeline.png, id=17, 1241.38782pt x 636.12656pt>
 File: pipeline.png Graphic file (type png)
 <use pipeline.png>
-Package pdftex.def Info: pipeline.png  used on input line 162.
+Package pdftex.def Info: pipeline.png  used on input line 161.
 (pdftex.def)             Requested size: 516.0pt x 264.41469pt.
 
-LaTeX Warning: Citation `fallingthings' on page 2 undefined on input line 179.
+LaTeX Warning: Citation `fallingthings' on page 2 undefined on input line 178.
 
 [2] [3 <./pipeline.png>]
 <3_1.png, id=36, 305.067pt x 142.569pt>
 File: 3_1.png Graphic file (type png)
 <use 3_1.png>
-Package pdftex.def Info: 3_1.png  used on input line 267.
+Package pdftex.def Info: 3_1.png  used on input line 266.
 (pdftex.def)             Requested size: 113.39923pt x 52.99551pt.
 <3_2.png, id=37, 248.565pt x 177.171pt>
 File: 3_2.png Graphic file (type png)
 <use 3_2.png>
-Package pdftex.def Info: 3_2.png  used on input line 275.
+Package pdftex.def Info: 3_2.png  used on input line 274.
 (pdftex.def)             Requested size: 113.39923pt x 80.82649pt.
 <3_3.png, id=38, 305.067pt x 156.585pt>
 File: 3_3.png Graphic file (type png)
 <use 3_3.png>
-Package pdftex.def Info: 3_3.png  used on input line 285.
+Package pdftex.def Info: 3_3.png  used on input line 284.
 (pdftex.def)             Requested size: 113.39923pt x 58.20552pt.
 <3_4.png, id=39, 286.671pt x 153.738pt>
 File: 3_4.png Graphic file (type png)
 <use 3_4.png>
-Package pdftex.def Info: 3_4.png  used on input line 293.
+Package pdftex.def Info: 3_4.png  used on input line 292.
 (pdftex.def)             Requested size: 113.39923pt x 60.81381pt.
  [4 <./3_1.png> <./3_2.png> <./3_3.png> <./3_4.png>]
 <Algorithm Comparison.png, id=50, 1078.78032pt x 522.45187pt>
 File: Algorithm Comparison.png Graphic file (type png)
 <use Algorithm Comparison.png>
-Package pdftex.def Info: Algorithm Comparison.png  used on input line 397.
+Package pdftex.def Info: Algorithm Comparison.png  used on input line 396.
 (pdftex.def)             Requested size: 516.0pt x 249.89713pt.
 
 [5] [6]
 <depth_noise.png, id=58, 618.6312pt x 411.939pt>
 File: depth_noise.png Graphic file (type png)
 <use depth_noise.png>
-Package pdftex.def Info: depth_noise.png  used on input line 520.
+Package pdftex.def Info: depth_noise.png  used on input line 519.
 (pdftex.def)             Requested size: 252.0pt x 167.80237pt.
  (RA_L.bbl
 Underfull \hbox (badness 2884) in paragraph at lines 37--40
@@ -607,7 +607,7 @@ e1/public/amsfonts/symbols/msbm10.pfb><D:/software/mik/fonts/type1/urw/times/ut
 mb8a.pfb><D:/software/mik/fonts/type1/urw/times/utmbi8a.pfb><D:/software/mik/fo
 nts/type1/urw/times/utmr8a.pfb><D:/software/mik/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on RA_L.pdf (8 pages, 2028786 bytes).
+Output written on RA_L.pdf (8 pages, 2028743 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

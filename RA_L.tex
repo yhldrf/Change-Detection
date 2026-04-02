@@ -126,10 +126,9 @@ Overall, this work improves the robustness of 6D pose estimation by enhancing th
  
  Subsequent approaches aim to improve practicality by reducing reliance on multi-view data.  Methods such as SamPose~\cite{shi2025sampose} and AxisPose~\cite{zou2026axispose} propose generalizable single-view frameworks, enabling more efficient inference without complex preprocessing or matching pipelines.  Nevertheless, purely vision-based representations remain sensitive to adverse light conditions, which degrade their generalization.
  
- Recent efforts further explore model-free generalization under limited supervision. FS6D~\cite{he2022fs6d} and NOPE~\cite focus on few-shot or single-view settings to reduce data collection costs.  However, these approaches still struggle under severe occlusions. GFreeDet~\cite{liu2024gfreedet} introduces Gaussian splatting and large-scale visual representations for model-free detection, yet its performance degrades in complex environments. FoundationPose~\citen{wen2024foundationpose} unifies pose estimation and tracking within a single framework, and Any6D~\cite{lee2025any6d} further improves generalization without explicit model dependence.
+ Recent efforts further explore model-free generalization under limited supervision. FS6D~\cite{he2022fs6d} and NOPE~\cite focus on few-shot or single-view settings to reduce data collection costs.  However, these approaches still struggle under severe occlusions. GFreeDet~\cite{liu2024gfreedet} introduces Gaussian splatting and large-scale visual representations for model-free detection, yet its performance degrades in complex environments. FoundationPose~\cite{wen2024foundationpose} unifies pose estimation and Any6D~\cite{lee2025any6d} further improves generalization without explicit model dependence.
  
- Despite these advances, existing methods remain sensitive to degraded geometric observations. 
- In particular, noisy point clouds and severe occlusions significantly affect geometric consistency, leading to unstable pose estimation. This limitation is especially pronounced in low-light conditions, where sensor noise further deteriorates depth quality.
+ Despite these advances, existing methods remain sensitive to degraded geometric observations.  In particular, noisy point clouds and severe occlusions significantly affect geometric consistency, leading to unstable pose estimation. This limitation is especially pronounced in low-light conditions, where sensor noise further deteriorates depth quality.
  
  \begin{table}[htbp]
  	\caption{Comparison of 6D object pose detection datasets.}
@@ -160,11 +159,11 @@ Overall, this work improves the robustness of 6D pose estimation by enhancing th
    \begin{figure*}[ht]
  	\centering
  	\includegraphics[width=1\textwidth]{pipeline}
- 	\caption{the overall pipeline of the proposed method.The object model is first reconstructed from the anchor image. 
- 		With the proposed SPMG module, noisy point clouds are refined into high-quality geometric representations. A bounding box is then estimated from the filtered point cloud and used to rescale the reconstructed model, recovering its physical scale. 
- 		Meanwhile, the pose of the anchor image is estimated using the FoundationPose~\cite{wen2024foundationpose} framework.Subsequently, the pose of the query image is estimated using the same pose estimation method. By combining the two poses, the relative 6D pose between the anchor and query images is obtained.}
+ 	\caption{Overview of the proposed pipeline for estimating the relative 6D pose between an anchor and a query image. The object model is first reconstructed from the anchor image, and noisy point clouds are refined by the proposed SPMG module to obtain reliable geometric representations. An oriented bounding box is then estimated from the refined point cloud to determine the object  scale, producing a robust initial pose for the anchor image. This initial pose is subsequently refined using the pose refinement framework. The query image pose is estimated in the same manner, and the relative 6D pose is finally obtained by combining the two estimated poses.}
  	\label{Fig. 2}
  \end{figure*}
+ 
+ 
  
  \subsection{6D Object Pose Estimation Datasets}
  High-quality datasets play a crucial role in advancing 6D object pose estimation. 

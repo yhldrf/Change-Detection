@@ -30,8 +30,6 @@
 \citation{liu2024gfreedet}
 \citation{wen2024foundationpose}
 \citation{lee2025any6d}
-\citation{wen2024foundationpose}
-\citation{wen2024foundationpose}
 \citation{hinterstoisser2012model}
 \citation{xiang2017posecnn}
 \citation{hodan2017t}
@@ -48,7 +46,7 @@
 \@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Comparison of 6D object pose detection datasets.}}{2}{}\protected@file@percent }
 \newlabel{table_dataset_comparison}{{I}{2}{}{table.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}6D Object Pose Estimation Datasets}{2}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces the overall pipeline of the proposed method.The object model is first reconstructed from the anchor image. With the proposed SPMG module, noisy point clouds are refined into high-quality geometric representations. A bounding box is then estimated from the filtered point cloud and used to rescale the reconstructed model, recovering its physical scale. Meanwhile, the pose of the anchor image is estimated using the FoundationPose~\cite  {wen2024foundationpose} framework.Subsequently, the pose of the query image is estimated using the same pose estimation method. By combining the two poses, the relative 6D pose between the anchor and query images is obtained.}}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Overview of the proposed pipeline for estimating the relative 6D pose between an anchor and a query image. The object model is first reconstructed from the anchor image, and noisy point clouds are refined by the proposed SPMG module to obtain reliable geometric representations. An oriented bounding box is then estimated from the refined point cloud to determine the object scale, producing a robust initial pose for the anchor image. This initial pose is subsequently refined using the pose refinement framework. The query image pose is estimated in the same manner, and the relative 6D pose is finally obtained by combining the two estimated poses.}}{3}{}\protected@file@percent }
 \newlabel{Fig. 2}{{2}{3}{}{figure.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {III}Methodology}{3}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Overview}{3}{}\protected@file@percent }
